@@ -1,0 +1,9 @@
+{
+	"name": "arundatafactory0105",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8b380a9d-ebb7-4587-827d-104bdc71d70a",
+		"tenantId": "39f7d490-5316-4a7c-a6a0-b434d5f7c13e"
+	}
+}
