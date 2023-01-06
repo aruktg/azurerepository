@@ -61,6 +61,20 @@
 				]
 			}
 		],
+		"parameters": {
+			"lscontainer": {
+				"type": "string"
+			},
+			"lsdirectory": {
+				"type": "string"
+			},
+			"lsfile": {
+				"type": "string"
+			},
+			"lsoutdirectory": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
