@@ -50,13 +50,41 @@
 				"inputs": [
 					{
 						"referenceName": "linkparam",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"lccontainer": {
+								"value": "@pipeline().parameters.lscontainer",
+								"type": "Expression"
+							},
+							"lcdirectory": {
+								"value": "@pipeline().parameters.lsdirectory",
+								"type": "Expression"
+							},
+							"lcfile": {
+								"value": "@pipeline().parameters.lsfile",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
 					{
 						"referenceName": "linksinkpara",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"lsinkcontainier": {
+								"value": "@pipeline().parameters.lscontainer",
+								"type": "Expression"
+							},
+							"lsinkdirectory": {
+								"value": "@pipeline().parameters.lsoutdirectory",
+								"type": "Expression"
+							},
+							"lsinkfile": {
+								"value": "@pipeline().parameters.lsfile",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
