@@ -10,8 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "SalesLTCustomer.txt",
-				"folderPath": "source_dir",
+				"fileName": "SalesLTProduct.txt",
+				"folderPath": "sink_dir",
 				"fileSystem": "aruncontainer"
 			},
 			"columnDelimiter": "\t",
