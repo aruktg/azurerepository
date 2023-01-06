@@ -10,7 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "arun_dir",
+				"fileName": "SalesLTCustomer.txt",
+				"folderPath": "source_dir",
 				"fileSystem": "aruncontainer"
 			},
 			"columnDelimiter": ",",
