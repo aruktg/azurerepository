@@ -1,0 +1,45 @@
+{
+	"name": "linkparam",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStore1",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"linkcontainer": {
+					"value": "@dataset().lccontainer",
+					"type": "Expression"
+				},
+				"linkdirectory": {
+					"value": "@dataset().lcdirectory",
+					"type": "Expression"
+				},
+				"linkfile": {
+					"value": "@dataset().lcfile",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"lccontainer": {
+				"type": "string"
+			},
+			"lcdirectory": {
+				"type": "string"
+			},
+			"lcfile": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureDataLakeStoreLocation"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
