@@ -11,7 +11,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": "SalesLTCustomer.txt",
-				"folderPath": "input_direc",
+				"folderPath": "source_dir",
 				"fileSystem": "aruncontainer"
 			},
 			"columnDelimiter": "\t",
