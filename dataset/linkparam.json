@@ -34,7 +34,15 @@
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "AzureDataLakeStoreLocation"
+				"type": "AzureDataLakeStoreLocation",
+				"fileName": {
+					"value": "@dataset().lcfile",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().lcdirectory",
+					"type": "Expression"
+				}
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
