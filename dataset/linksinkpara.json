@@ -1,0 +1,45 @@
+{
+	"name": "linksinkpara",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage2",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"linsinkcontainer": {
+					"value": "@dataset().lsinkcontainier",
+					"type": "Expression"
+				},
+				"linsinkdirectory": {
+					"value": "@dataset().lsinkdirectory",
+					"type": "Expression"
+				},
+				"linsinkfile": {
+					"value": "@dataset().lsinkfile",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"lsinkcontainier": {
+				"type": "string"
+			},
+			"lsinkdirectory": {
+				"type": "string"
+			},
+			"lsinkfile": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
