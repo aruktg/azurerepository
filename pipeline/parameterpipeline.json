@@ -1,6 +1,108 @@
 {
 	"name": "parameterpipeline",
 	"properties": {
+		"activities": [
+			{
+				"name": "Copy data1",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobFSReadSettings",
+							"recursive": true,
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
+						}
+					},
+					"sink": {
+						"type": "DelimitedTextSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".txt"
+						}
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "ppsourcedataset",
+						"type": "DatasetReference",
+						"parameters": {
+							"dsinputdirectory": {
+								"value": "@pipeline().parameters.ppinputdirectory",
+								"type": "Expression"
+							},
+							"dscontainer": {
+								"value": "@pipeline().parameters.ppcontainer",
+								"type": "Expression"
+							},
+							"dsfile": {
+								"value": "@pipeline().parameters.ppfilename",
+								"type": "Expression"
+							}
+						}
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "ppsinkdataset",
+						"type": "DatasetReference",
+						"parameters": {
+							"dscontainerout": {
+								"value": "@pipeline().parameters.ppcontainer",
+								"type": "Expression"
+							},
+							"dsoutdirectory": {
+								"value": "@pipeline().parameters.ppoutputdirectory",
+								"type": "Expression"
+							},
+							"dsoutfile": {
+								"value": "@pipeline().parameters.ppfilename",
+								"type": "Expression"
+							}
+						}
+					}
+				]
+			}
+		],
+		"parameters": {
+			"ppcontainer": {
+				"type": "string"
+			},
+			"ppinputdirectory": {
+				"type": "string"
+			},
+			"ppoutputdirectory": {
+				"type": "string"
+			},
+			"ppfilename": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
