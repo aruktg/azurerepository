@@ -102,7 +102,13 @@
 							"inputs": [
 								{
 									"referenceName": "source",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"dsfile": {
+											"value": "@item().name",
+											"type": "Expression"
+										}
+									}
 								}
 							],
 							"outputs": [
