@@ -131,7 +131,7 @@
 							"userProperties": []
 						},
 						{
-							"name": "Copy data1_copy1",
+							"name": "savetxt",
 							"type": "Copy",
 							"dependsOn": [],
 							"policy": {
