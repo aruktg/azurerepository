@@ -101,14 +101,20 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "getmetadatads",
+									"referenceName": "source",
 									"type": "DatasetReference"
 								}
 							],
 							"outputs": [
 								{
-									"referenceName": "getmetadatads",
-									"type": "DatasetReference"
+									"referenceName": "sink",
+									"type": "DatasetReference",
+									"parameters": {
+										"dsfile": {
+											"value": "@item().name",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
