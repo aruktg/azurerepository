@@ -15,7 +15,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "MarketLTAddress.txt",
+				"fileName": {
+					"value": "@dataset().dsfile",
+					"type": "Expression"
+				},
 				"folderPath": "ADwork/input",
 				"fileSystem": "aruncontainer"
 			},
