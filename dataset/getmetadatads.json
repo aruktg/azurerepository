@@ -5,11 +5,6 @@
 			"referenceName": "AzureDataLakeStorage3",
 			"type": "LinkedServiceReference"
 		},
-		"parameters": {
-			"dsfile": {
-				"type": "string"
-			}
-		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
