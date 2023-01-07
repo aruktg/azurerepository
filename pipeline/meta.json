@@ -124,7 +124,7 @@
 										],
 										"outputs": [
 											{
-												"referenceName": "sink",
+												"referenceName": "sinktxt",
 												"type": "DatasetReference",
 												"parameters": {
 													"dsfile": {
