@@ -102,13 +102,7 @@
 							"inputs": [
 								{
 									"referenceName": "getmetadatads",
-									"type": "DatasetReference",
-									"parameters": {
-										"dsfile": {
-											"value": "@item()",
-											"type": "Expression"
-										}
-									}
+									"type": "DatasetReference"
 								}
 							],
 							"outputs": [
