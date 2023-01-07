@@ -55,7 +55,7 @@
 					"isSequential": true,
 					"activities": [
 						{
-							"name": "savecsv",
+							"name": "savetxt1",
 							"type": "Copy",
 							"dependsOn": [],
 							"policy": {
@@ -132,7 +132,7 @@
 							"typeProperties": {
 								"ifTrueActivities": [
 									{
-										"name": "savecsv_copy1",
+										"name": "savecsv",
 										"type": "Copy",
 										"dependsOn": [],
 										"policy": {
