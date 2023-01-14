@@ -45,7 +45,7 @@
 					},
 					"method": "PUT",
 					"body": {
-						"value": "@activity('Web1').output.Response",
+						"value": "@activity('Web1').output",
 						"type": "Expression"
 					},
 					"linkedServices": [
