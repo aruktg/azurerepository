@@ -1,0 +1,19 @@
+{
+	"name": "outfile",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage5",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "ADwork",
+				"fileSystem": "aruncontainer"
+			}
+		},
+		"schema": {}
+	}
+}
