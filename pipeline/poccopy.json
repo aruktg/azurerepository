@@ -53,7 +53,10 @@
 				"inputs": [
 					{
 						"referenceName": "pocsource",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"filename": "*.zip"
+						}
 					}
 				],
 				"outputs": [
