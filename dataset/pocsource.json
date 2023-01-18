@@ -15,6 +15,7 @@
 				"fileSystem": "pocproject"
 			},
 			"columnDelimiter": ",",
+			"compressionCodec": "deflate",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
