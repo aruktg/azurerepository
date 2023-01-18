@@ -15,7 +15,8 @@
 				"fileSystem": "pocproject"
 			},
 			"columnDelimiter": ",",
-			"compressionCodec": "deflate",
+			"compressionCodec": "ZipDeflate",
+			"compressionLevel": "Optimal",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
