@@ -1,0 +1,29 @@
+{
+	"name": "pocsource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "AdventureWorksLT2012.zip",
+				"folderPath": "storage",
+				"fileSystem": "pocproject"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000S��U/\u0005\u0000��Q\u0000\u0000U\u0011\u0002\u0000/\u0000\u0000\u0000AdventureWorksLT2012/Copy of SalesLTProduct.txt��r\u001c7���k��\u000f`t�\u0000\u0012s�c��R^��\u0013�����2Ǵ�(�ξ�^�#�+��f7Ev�",
+				"type": "String"
+			}
+		]
+	}
+}
