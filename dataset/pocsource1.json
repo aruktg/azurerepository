@@ -22,10 +22,7 @@
 					"value": "@dataset().filepath",
 					"type": "Expression"
 				},
-				"folderPath": {
-					"value": "@dataset().directorypath",
-					"type": "Expression"
-				},
+				"folderPath": "storage",
 				"fileSystem": "pocproject"
 			},
 			"compression": {
